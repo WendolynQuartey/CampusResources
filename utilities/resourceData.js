@@ -2,6 +2,7 @@ export default [
   {
     name: "24-Hour Engineering Library",
     description: "Round-the-clock study space with silent zones, group study rooms, and free printing. Perfect for late-night study sessions.",
+    category: "study-space",
     location: {
       building: "Engineering Building",
       room: 304
@@ -10,6 +11,7 @@ export default [
   {
     name: "Media Lab Equipment Rental",
     description: "Borrow professional-grade cameras, lighting kits, audio equipment, and video editing stations. Free for students with reservation.",
+    category: "tech-equipment",
     location: {
       building: "Student Center",
       room: 210
@@ -18,6 +20,7 @@ export default [
   {
     name: "Campus Gym - Main Building",
     description: "Full-service fitness center with cardio equipment, weight rooms, indoor track, basketball courts, and group fitness classes.",
+    category: "recreation",
     location: {
       building: "Recreation Center",
       room: 100
@@ -26,6 +29,7 @@ export default [
   {
     name: "Student Success Center Tutoring",
     description: "Free peer tutoring for all subjects, writing assistance, study skills workshops, and academic coaching appointments.",
+    category: "academic-support",
     location: {
       building: "Academic Services",
       room: 125
@@ -34,6 +38,7 @@ export default [
   {
     name: "Science Building 3D Printers",
     description: "Three industrial 3D printers available for student projects. Free PLA filament included with training certification.",
+    category: "tech-equipment",
     location: {
       building: "Science Complex",
       room: 415
@@ -42,6 +47,7 @@ export default [
   {
     name: "Main Library Quiet Zones",
     description: "Designated silent study areas on floors 4-6. Strict no-talking policy enforced. Individual carrels with task lighting.",
+    category: "study-space",
     location: {
       building: "Main Library",
       room: 500
@@ -50,6 +56,7 @@ export default [
   {
     name: "Campus Food Pantry",
     description: "Free non-perishable food items, fresh produce when available, and personal care products for students in need.",
+    category: "food",
     location: {
       building: "Campus Ministries",
       room: 12
@@ -58,6 +65,7 @@ export default [
   {
     name: "Computer Lab - Tech Center",
     description: "High-performance computers with specialized software including AutoCAD, Adobe Creative Suite, MATLAB, and statistical analysis tools.",
+    category: "tech-equipment",
     location: {
       building: "Technology Center",
       room: 301
@@ -66,6 +74,7 @@ export default [
   {
     name: "Career Center Resume Help",
     description: "Professional resume reviews, mock interviews, career counseling, internship placement assistance, and job fair coordination.",
+    category: "academic-support",
     location: {
       building: "Career Services",
       room: 208
@@ -74,6 +83,7 @@ export default [
   {
     name: "Music Practice Rooms",
     description: "Soundproof rooms with pianos, music stands, and instrument storage. Available for individual and small group practice.",
+    category: "arts",
     location: {
       building: "Fine Arts Building",
       room: 105
@@ -82,6 +92,7 @@ export default [
   {
     name: "Outdoor Study Spaces - Quad",
     description: "Weather-resistant tables, benches with power outlets, and WiFi coverage throughout the main quad area.",
+    category: "study-space",
     location: {
       building: "Outdoor Campus",
       room: 0
@@ -90,6 +101,7 @@ export default [
   {
     name: "Health Center Counseling",
     description: "Confidential mental health services including individual therapy, group counseling, crisis intervention, and wellness workshops.",
+    category: "wellness",
     location: {
       building: "Student Health Center",
       room: 312
@@ -98,6 +110,7 @@ export default [
   {
     name: "Language Learning Lab",
     description: "Interactive language software, conversation practice rooms, cultural resource library, and international film collection.",
+    category: "academic-support",
     location: {
       building: "Humanities Building",
       room: 227
@@ -106,6 +119,7 @@ export default [
   {
     name: "Art Studio Equipment",
     description: "Pottery wheels, kilns, printing presses, easels, and various art supplies available for checkout to art majors.",
+    category: "arts",
     location: {
       building: "Visual Arts Center",
       room: 33
@@ -114,6 +128,7 @@ export default [
   {
     name: "Biology Department Microscopes",
     description: "Compound, dissecting, and electron microscopes for biology and research projects. Digital imaging workstations available.",
+    category: "tech-equipment",
     location: {
       building: "Life Sciences Building",
       room: 418
@@ -122,6 +137,7 @@ export default [
   {
     name: "Student Lounge - Union Building",
     description: "Comfortable social space with couches, TVs, game tables, microwave, and vending machines. Open until midnight daily.",
+    category: "recreation",
     location: {
       building: "Student Union",
       room: 150
@@ -130,6 +146,7 @@ export default [
   {
     name: "Recording Studio",
     description: "Professional audio recording booth with mixing console, microphones, and sound editing software. Audio engineering assistance available.",
+    category: "arts",
     location: {
       building: "Media Arts Building",
       room: 112
@@ -138,6 +155,7 @@ export default [
   {
     name: "Maker Space Workshop",
     description: "Collaborative workspace with laser cutters, CNC machines, soldering stations, hand tools, and electronics components.",
+    category: "tech-equipment",
     location: {
       building: "Innovation Hub",
       room: 205
@@ -146,6 +164,7 @@ export default [
   {
     name: "Greenhouse & Garden",
     description: "Botany research greenhouse with exotic plant collection and student-run vegetable garden. Volunteer opportunities available.",
+    category: "wellness",
     location: {
       building: "Botany Wing",
       room: 1
@@ -154,6 +173,7 @@ export default [
   {
     name: "Law Library Study Carrels",
     description: "Private study carrels with lockable storage, available for semester-long reservation to law and graduate students.",
+    category: "study-space",
     location: {
       building: "Law School",
       room: 600
