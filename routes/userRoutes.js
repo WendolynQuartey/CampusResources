@@ -1,0 +1,40 @@
+import express from "express";
+import User from "../models/userSchema.js";
+
+const router = express.Router();
+
+router.route("/")
+   // Create
+   .post(async (req, res) => {
+      let newUser = await User.insertOne(req.body);
+
+      res.json(newUser);
+   })
+   // Read - Show All
+   .get(async (req, res) => {
+      let allUsers = await User.find(req.body);
+
+      res.json(allUsers);
+   });
+
+router.route("/:id")
+   // Update
+   .put(async (req, res) => {
+      let updateUser = await User.findByIdAndUpdate({new: true, runValidators: true});
+      if(!updateUser) return res.status(404).json({error: "Resource Not Found!!"});
+      else res.json(updateUser);
+   })
+   // Delete
+   .delete(async (req, res) => {
+      let deletedUser = await User.findByIdAndDelete(req.params.id);
+      if(!deletedUser) return res.status(404).json({error: "Resource Not Found!!"});
+      else res.json(deletedUser);
+   })
+   // Show One
+   .get(async (req, res) => {
+      let oneUser = await User.findById(req.params.id);
+      if(!oneUser) return res.status(404).json({error: "Resource Not Found!!"});
+      else res.json(oneUser);
+   });
+
+export default router;
