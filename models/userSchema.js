@@ -22,6 +22,7 @@ const userSchema = new mongoose.Schema(
    },
    year: {
       type: String,
+      enum: ["Freshman", "Sophmore", "Junior", "Senior", "Graduate"],
       required: true,
    }
 },

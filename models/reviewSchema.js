@@ -26,8 +26,8 @@ const reviewSchema = new mongoose.Schema(
    },
    comment: {
       type: String,
-   }
-},
+   },
+}
 );
 
 export default mongoose.model("Review", reviewSchema);

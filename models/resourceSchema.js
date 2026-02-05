@@ -6,6 +6,11 @@ const resourceSchema = new mongoose.Schema(
       type: String,
       required: true,
    },
+   category: {
+      type: String,
+      enum: ['study-space', 'tech-equipment', 'academic-support', 'wellness', 'recreation', 'arts', 'food'],
+      required: true,
+   },
    description: {
       type: String
    },
