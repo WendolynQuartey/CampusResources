@@ -1,3 +1,5 @@
-# Campus Resource Server
+# 📚 Campus Resource Hub API 
+A Node.js, Express, and MongoDB backend API for a Campus Resource Hub where students can discover, share, and review campus resources like study spots, equipment, services, and events
 
-## Description: A back-end database of campus resources and their reviews from students
+## Routes 
+
