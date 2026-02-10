@@ -37,4 +37,10 @@ router.route("/:id")
       else res.json(oneResource);
    });
 
+router.route("/category/:name").get(async (req, res) => {
+   let cat = await Resource.find({category: req.params.category.enumValues()});
+   if(!cat) return res.status(404).json({error: "Category Not Found!!"});
+   else res.json(cat);
+});
+
 export default router;
