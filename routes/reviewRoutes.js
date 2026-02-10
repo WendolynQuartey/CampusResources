@@ -20,7 +20,7 @@ router.route("/")
 router.route("/:id")
    // Update
    .put(async (req, res) => {
-      let updateReview = await Review.findByIdAndUpdate({new: true, runValidators: true});
+      let updateReview = await Review.findByIdAndUpdate(req.params.id, req.body, {new: true, runValidators: true});
       if(!updateReview) return res.status(404).json({error: "Resource Not Found!!"});
       else res.json(updateReview);
    })

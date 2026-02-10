@@ -23,6 +23,7 @@ A Node.js, Express, and MongoDB backend API for a Campus Resource Hub where stud
 | PUT    	| /api/resources/:id 	| Update resource information     	| Update         	|
 | DELETE 	| /api/resources/:id 	| Delete resource    	| Delete         	|
 
+
 ### ⭐️ Reviews Routes 
 | Method 	| Endpoint       	| Description             	| CRUD Operation 	|
 |--------	|----------------	|-------------------------	|----------------	|
