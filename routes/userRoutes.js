@@ -12,7 +12,7 @@ router.route("/")
    })
    // Read - Show All
    .get(async (req, res) => {
-      let allUsers = await User.find(req.body);
+      let allUsers = await User.find({});
 
       res.json(allUsers);
    });

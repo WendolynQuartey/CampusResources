@@ -12,7 +12,7 @@ router.route("/")
    })
    // Read - Show All
    .get(async (req, res) => {
-      let allReviews = await Review.find(req.body);
+      let allReviews = await Review.find({});
 
       res.json(allReviews);
    });

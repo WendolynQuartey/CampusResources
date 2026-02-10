@@ -9,7 +9,7 @@ import userData from "./userData.js";
 
 dotenv.config();
 
-const connectionStr = process.env.MOGO_URI || "";
+const connectionStr = process.env.MONGO_URI || "";
 
 async function seedDatabase() {
    console.log("🚀 Starting Seed...");
